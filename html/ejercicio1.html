@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulario Meta Tags">
+    <meta name="keywords" content="">
+    <meta name="author" content="Pablo Insua">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Formulario DIW</title>
+    <link rel="stylesheet" href="../css/ejercicio1.css">
+</head>
+<body>
+    <div class="container">
+        <form action="ejercicio1.html" class="formulario">
+            <h1>FORMULARIO</h1>
+            <div class="inputs">
+                <label for="nombreCompleto">Nombre Completo:</label>
+                <input type="text" name="nombreCompleto" pattern="[A-Za-z]" required placeholder="John Doe" id="">
+                <label for="correo">Correo:</label>
+                <input type="text" name="correo" required pattern   ="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"  placeholder="johndoe@gmail.com" id="">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" pattern="^[\w-\.]{6,}" placeholder="Contraseña" required id="">
+                <label for="genero">Genero:</label>
+                <div class="genero">
+                    <input type="radio" id="" name="genero" value="Hombre">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" id="" name="genero" value="Mujer">
+                    <label for="mujer">Mujer</label>
+                </div>
+                <label for="asignaturas">Asignaturas:</label>
+                <select name="asignaturas" id="">
+                    <option value=""></option>
+                    <option value="DIW">DIW</option>
+                    <option value="DEAW">DEAW</option>
+                    <option value="DEWS">DEWS</option>
+                    <option value="DWCC">DWCC</option>
+                    <option value="EIE">EIE</option>
+                </select>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
