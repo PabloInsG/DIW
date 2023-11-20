@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ejercicio1.css">
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="../img/logoIES.gif" title="logo" alt="">
+        </figure>
+        <nav>
+            <ul>
+                <li class="list">
+                    <a href="ejercicio1.html">
+                        <span class="icon">
+                            <img src="../img/icons8-casa-50.png" class="home" width="30" alt="">
+                        </span>
+                        <span class="text">Inicio</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="formulario.html">
+                        <span class="icon">
+                            <img src="../img/icons8-usuario-30.png" width="30">
+                        </span>
+                        <span class="text">Formulario</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="media.html">
+                        <span class="icon">
+                            <img src="../img/icons8-media-64.png" width="30"> 
+                        </span>
+                        <span class="text">Media</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <h1><i>IMAGENES</i></h1>
+        <picture>
+            <source media="(min-width: 1400px)" srcset="../img/logoIESgrande.png">
+            <source media="(min-width: 500px)" srcset="../img/logoIESmediano.png">
+            <img src="../img/logoIES.gif" alt="">
+        </picture>
+
+        <h1><mark>VIDEOS</mark></h1>
+        <video controls autoplay muted>
+            <source src="../videos/NeymarJr_Skills_Tricks.mp4" type="video/mp4">
+            <source src="../videos/NeymarJr_Skills_Tricks.webm" type="video/webm">
+        </video>
+
+        <h1>AUDIOS</h1>
+        <audio controls>
+            <source src="../audios/onTime.mp3" type="audio/mp3">
+            <source src="../audios/onTime.ogg" type="audio/ogg">
+        </audio>
+
+        <h1>LISTA</h1>
+        <ol>
+            <li>Crear el elemento figure, en este caso lo hacemos dentro del header</li>
+            <li>Crear el elemento picture, con las distintas medidas</li>
+            <li>Crear el elemento video, dentro con dos elementos <mark>source</mark></li>
+            <li>Crear el elemento figure</li>
+            <li>Crear el elemento figure</li>
+        </ol>
+
+    </div>
+    <footer>
+        <picture>
+            <source media="(min-width: 1400px)" srcset="../img/logoIESgrande.png">
+            <source media="(min-width: 500px)" srcset="../img/logoIESmediano.png">
+            <img src="../img/logoIES.gif" alt="">
+        </picture>
+        <address>
+            Diseñado por <a href="mailto:pablo.insua.gerpe@gmail.com">Pablo Insua</a>.<br>
+            Visitanos en: https://www.edu.xunta.gal/centros/iesmaximinoromerodelema/<br>
+            Baio, Zas, A Coruña, España
+        </address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11644.44589580295!2d-8.9561695!3d43.1441884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2eb88b0f2c0019%3A0xa55170088a0847f3!2s%5BIES%5D%20Instituto%20de%20Educaci%C3%B3n%20Secundaria%20Maximino%20Romero%20de%20Lema!5e0!3m2!1ses!2ses!4v1700483446016!5m2!1ses!2ses" width="350px" height="280px" style="border-radius: 0.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+</body>
+</html>

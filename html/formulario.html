@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/ejercicio1.css">
+    <style>
+        .container{
+            height: 900px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <figure>
+            <img src="../img/logoIES.gif" title="logo" alt="">
+        </figure>
+        <nav>
+            <ul>
+                <li class="list">
+                    <a href="ejercicio1.html">
+                        <span class="icon">
+                            <img src="../img/icons8-casa-50.png" class="home" width="30" alt="">
+                        </span>
+                        <span class="text">Inicio</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="formulario.html">
+                        <span class="icon">
+                            <img src="../img/icons8-usuario-30.png" width="30">
+                        </span>
+                        <span class="text">Formulario</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="media.html">
+                        <span class="icon">
+                            <img src="../img/icons8-media-64.png" width="30"> 
+                        </span>
+                        <span class="text">Media</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+
+        <form action="ejercicio1.html" class="formulario">
+            <h1>FORMULARIO</h1>
+            <div class="inputs">
+                <label for="nombreCompleto">Nombre Completo:</label>
+                <input type="text" name="nombreCompleto" id="nombreCompleto" pattern="[A-Za-z]" required placeholder="John Doe" id="">
+                <label for="correo">Correo:</label>
+                <input type="text" name="correo" id="correo" required pattern   ="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"  placeholder="johndoe@gmail.com" id="">
+                <label for="contraseña">Contraseña:</label>
+                <input type="password" name="contraseña" id="contraseña" pattern="^[\w-\.]{6,}" placeholder="Contraseña" required id="">
+                <label for="">Genero:</label>
+                <div class="genero">
+                    <input type="radio" name="genero" value="Hombre">
+                    <label for="hombre">Hombre</label>
+                    <input type="radio" name="genero" value="Mujer">
+                    <label for="mujer">Mujer</label>
+                </div>
+                <label for="asignaturas">Asignaturas:</label>
+                <select name="asignaturas" id="asignaturas">
+                    <option value=""></option>
+                    <option value="DIW">DIW</option>
+                    <option value="DEAW">DEAW</option>
+                    <option value="DEWS">DEWS</option>
+                    <option value="DWCC">DWCC</option>
+                    <option value="EIE">EIE</option>
+                </select>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+    <footer>
+        <picture>
+            <source media="(min-width: 1400px)" srcset="../img/logoIESgrande.png">
+            <source media="(min-width: 500px)" srcset="../img/logoIESmediano.png">
+            <img src="../img/logoIES.gif" alt="">
+        </picture>
+        <address>
+            Diseñado por <a href="mailto:pablo.insua.gerpe@gmail.com">Pablo Insua</a>.<br>
+            Visitanos en: https://www.edu.xunta.gal/centros/iesmaximinoromerodelema/<br>
+            Baio, Zas, A Coruña, España
+        </address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11644.44589580295!2d-8.9561695!3d43.1441884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2eb88b0f2c0019%3A0xa55170088a0847f3!2s%5BIES%5D%20Instituto%20de%20Educaci%C3%B3n%20Secundaria%20Maximino%20Romero%20de%20Lema!5e0!3m2!1ses!2ses!4v1700483446016!5m2!1ses!2ses" width="350px" height="280px" style="border-radius: 0.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </footer>
+</body>
+</html>
