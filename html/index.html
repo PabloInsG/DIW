@@ -1,69 +1,165 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Formulario Meta Tags">
+    <meta name="keywords" content="">
+    <meta name="author" content="Pablo Insua">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pagina DIW</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/index.js"></script>
 </head>
 <body>
-    <p>body</p>
     <header>
-        <p>header</p>
-        <nav class="navHeader">
-            <p>nav</p>
+        <figure>
+            <img src="../img/logoIES.gif" title="logo" alt="">
+        </figure>
+        <nav>
+            <ul>
+                <li class="list active">
+                    <a href="index.html">
+                        <span class="icon">
+                            <img src="../img/icons8-casa-50.png" class="home" width="30" alt="">
+                        </span>
+                        <span class="text">Inicio</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="formulario.html">
+                        <span class="icon">
+                            <img src="../img/icons8-usuario-30.png" width="30">
+                        </span>
+                        <span class="text">Formulario</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="media.html">
+                        <span class="icon">
+                            <img src="../img/icons8-media-64.png" width="30"> 
+                        </span>
+                        <span class="text">Media</span>
+                    </a>
+                </li>
+                <div class="indicator"></div>
+            </ul>
         </nav>
     </header>
-    <div class="sections">
-        <section class="section1"> 
-            <p>section</p>
-            <header class="headerSections">
-                <p>header</p>
-            </header>
-            <nav class="navSections">
-                <p>nav</p>
-            </nav>
-            <footer class="footerSections">
-                <p>footer</p>
-            </footer>
-        </section>
-        <section class="section2">
-            <p>section</p>
-            <header class="headerSections">
-                <p>header</p>
-            </header>
-                <article class="articles">
-                    <p>article</p>
-                    <header class="headerArticulos">
-                        <p>header</p>
-                    </header>
-                    <p class="textos">p</p>
-                    <p class="textos margen">p</p>
-                    <footer class="footerArticulos">
-                        <p>footer</p>
-                    </footer>
+    <div class="container">
+        <h1>Noticias</h1>
+        <div class="sections">
+            <section>
+                    <img src="../img/desayuno.jfif" width="100%" height="500px" alt="">
+                <article>
+                    Hoxe o alumnado de FPB e o de 2º do Ciclo Superior participaron no programa dos Almorzos saudables, unha iniciativa coa que apostamos por complementar a formación do noso alumnado en nutrición a través de actividades que conxugan saúde, benestar e pracer. 
                 </article>
-                <article class="articles">
-                    <p>article</p>
-                    <header class="headerArticulos">
-                        <p>header</p>
-                    </header>
-                    <div class="pAside">
-                        <p class="textoAside">p</p>
-                        <aside>aside</aside>
-                    </div>
-                    <footer class="footerArticulos">
-                        <p>footer</p>
-                    </footer>
+                <aside>
+                    Nun ambiente agradable gozaron, despois dunha pequena charla, do abano de opcións saudables que lles propuxemos para a primeira comida do día e que, de seguro, lles axudou a enfrontar con enerxía saudable e duradeira a longa xornada de clases que tiveron a continuación rendendo nas mesmas e controlando o apetito.
+                </aside>
+            </section>
+            <section>
+                <img src="../img/galiciaskills.jpg" width="100%" height="500px" alt="">
+                <article>
+                    Hoxe arrancou o GaliciaSkills 2023, o 7º Campionato galego de Formación Profesional, no recinto Feira Internacional Abanca de Silleda que se celebrará ata o venres 27, día no que se darán a coñecer aos gañadores de cada unha das especialidades participantes.
                 </article>
-            <footer class="footerSections">
-                <p>footer</p>
-            </footer>
-        </section>
+                <aside>
+                    Este ano, o IES Maximino Romero de Lema – Baio, participa nesta competición co alumno Daniel Villar de 2º curso do Ciclo Superior de DAW, que se atopa “moi ilusionado e disposto a aprender desta experiencia” según comenta o seu titor Bertín Deza, que estará estes días con el.
+                </aside>
+            </section>
+        </div>
+
+        <h1 class="estado">Estado del curso</h1>
+        <progress value="33" max="100"> 33%</progress>
+
+        <table border="1" class="tabla">
+            <caption>Horario 2GS DAW</caption>
+                <tr>
+                    <th>H</td>
+                    <th>L U N E S</th>
+                    <th>M A R T E S</th>
+                    <th>M I E R C O L E S</th>
+                    <th>J U E V E S</th>
+                    <th>V I E R N E S</th>
+                </tr>
+                <tr>
+                    <td>8:45-9:35</td>
+                    <td class="dwcc" rowspan="2">DWCC</td>
+                    <td class="dwcs" rowspan="2">DWCS</td>
+                    <td class="dwcs" rowspan="2">DWCS</td>
+                    <td class="dwcs">DWCS</td>
+                    <td class="diw" rowspan="2">DIW</td>
+                </tr>
+                <tr>
+                    <td>9:35-10:25</td>
+                    <td class="dwcc">DWCC</td>
+                </tr>
+                <tr>
+                    <td>10:25-10:45</td>
+                    <td colspan="5">R E C R E O</td>
+                </tr>
+                <tr>
+                    <td>10:45-11:35</td>
+                    <td rowspan="2" class="diw">DIW</td>
+                    <td rowspan="2" class="daw">DAW</td>
+                    <td class="libre" rowspan="2">EIE</td>
+                    <td class="dwcc">DWCC</td>
+                    <td class="diw">DIW</td>
+                </tr>
+                <tr>
+                    <td>11:35-12:25</td>
+                    <td class="daw">DAW</td>
+                    <td class="dwcs">DWCS</td>
+                </tr>
+                <tr>
+                    <td>12:25-12:45</td>
+                    <td colspan="5">R E C R E O</td>
+                </tr>
+                <tr>
+                    <td>12:45-13:35</td>
+                    <td rowspan="2" class="diw">DIW</td>
+                    <td class="dwcc" rowspan="2">DWCC</td>
+                    <td class="daw" rowspan="2">DAW</td>
+                    <td class="dwcc" rowspan="2">DWCC</td>
+                    <td class="dwcs" rowspan="2">DWCS</td>
+                </tr>
+                <tr>
+                    <td>13:35-14:25</td>
+                </tr>
+                <tr>
+                    <td>14:25-15:40</td>
+                    <td colspan="5">M E D I O D I A</td>
+                </tr>
+                <tr>
+                    <td>15:40-16:30</td>
+                    <td class="libre">EIE</td>
+                    <td rowspan="3"></td>
+                    <td class="dwcc">DWCC</td>
+                    <td rowspan="3"></td>
+                    <td rowspan="3"></td>
+                </tr>
+                <tr>
+                    <td>16:30-17:20</td>
+                    <td class="dwcs" rowspan="2">DWCS</td>
+                    <td class="diw" rowspan="2">DIW</td>
+                </tr>
+                <tr>
+                    <td>17:20-18:10</td>
+                </tr>
+            </table>
     </div>
-    <footer class="footerBody">
-        <p>Footer</p>
+    <footer>
+        <picture>
+            <source media="(min-width: 1400px)" srcset="../img/logoIESgrande.png">
+            <source media="(min-width: 500px)" srcset="../img/logoIESmediano.png">
+            <img src="../img/logoIES.gif" alt="">
+        </picture>
+        <address>
+            Diseñado por <a href="mailto:pablo.insua.gerpe@gmail.com">Pablo Insua</a>.<br>
+            Visitanos en: https://www.edu.xunta.gal/centros/iesmaximinoromerodelema/<br>
+            Baio, Zas, A Coruña, España
+        </address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11644.44589580295!2d-8.9561695!3d43.1441884!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2eb88b0f2c0019%3A0xa55170088a0847f3!2s%5BIES%5D%20Instituto%20de%20Educaci%C3%B3n%20Secundaria%20Maximino%20Romero%20de%20Lema!5e0!3m2!1ses!2ses!4v1700483446016!5m2!1ses!2ses" width="350px" height="280px" style="border-radius: 0.5rem;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </footer>
 </body>
 </html>
