@@ -353,3 +353,19 @@ ol li{
 }
 
 
+/*iframes*/
+.iframes{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.yt{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
